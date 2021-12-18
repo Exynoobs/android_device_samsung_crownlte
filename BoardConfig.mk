@@ -14,18 +14,18 @@
 # limitations under the License.
 
 include device/samsung/exynos9810-common/BoardConfigPlatform.mk
-include vendor/samsung/starlte/BoardConfigVendor.mk
+include vendor/samsung/crownlte/BoardConfigVendor.mk
 
-DEVICE_PATH := device/samsung/starlte
+DEVICE_PATH := device/samsung/crownlte
 
 PRODUCT_PLATFORM := exynos9810
 
-TARGET_OTA_ASSERT_DEVICE := starlte
+TARGET_OTA_ASSERT_DEVICE := crownlte
 
 TARGET_SPECIFIC_HEADER_PATH += $(DEVICE_PATH)/hardware/include
 
 ### DISPLAY
-TARGET_SCREEN_DENSITY := 560
+TARGET_SCREEN_DENSITY := 420
 
 ### KERNEL
-TARGET_KERNEL_CONFIG := exynos9810-starlte_defconfig
+TARGET_KERNEL_CONFIG := exynos9810-crownlte_defconfig
